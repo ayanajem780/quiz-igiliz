@@ -95,7 +95,7 @@ footer{color:var(--dust);font-size:.85rem;text-align:center}
 
 <script>
 const Q=[
- {d:0,q:"فين تزاد ابن تومرت؟",c:["فمراكش","فإگيليز","ففاس","فتينمل"],a:1,f:"تزاد فإگيليز، بين تارودانت وتيزي نتاشت، من قبائل مصمودة."},
+ {d:0,q:"فين تزاد ابن تومرت؟",c:["فمراكش","فتوغمرت","ففاس","فتينمل"],a:1,f:"تزاد فتوغمرت (Tougmert)، بين تارودانت وتيزي نتاشت، من قبائل مصمودة."},
  {d:0,q:"إگيليز كاينة ف أي جبال؟",c:["جبال الريف","جبال الأطلس","جبال صاغرو","جبال بني يزناسن"],a:1,f:"إگيليز قمة صخرية فأعالي جبال الأطلس."},
  {d:0,q:"شكون الدولة اللي كانت حاكمة المغرب ملي رجع ابن تومرت؟",c:["الأدارسة","المرابطين","السعديين","العلويين"],a:1,f:"المرابطين كانو فقمة قوتهم، من الأندلس حتى لنهر السنغال."},
  {d:0,q:"علاش تسماو أتباع ابن تومرت «الموحدين»؟",c:["حيت وحّدو القبائل","من التوحيد، يعني وحدانية الله","حيت كانو جيش واحد","على سمية مدينة"],a:1,f:"الاسم جا من دعوتو المركزية: التوحيد."},
@@ -141,9 +141,9 @@ function finish(){
   $('quiz').hidden=true;$('result').hidden=false;
   $('final').textContent=p;
   const L=$('level');
-  if(p<50){L.className='level low';L.textContent='ضعيف';$('msg').textContent='ماشي مشكل، معانا غادي تفهم تاريخ بلادك!'}
-  else if(p<80){L.className='level mid';L.textContent='متوسط';$('msg').textContent='مزيان، ولكن أجي تعلّم كثر!'}
-  else{L.className='level high';L.textContent='ممتاز';$('msg').textContent='مزيان بزاف! أجي تزيد معلومات خرين.'}
+  if(p<50){L.className='level low';L.textContent='الرحّالة الناشئ';$('msg').textContent='ماشي مشكل، معانا غادي تفهم تاريخ بلادك!'}
+  else if(p<80){L.className='level mid';L.textContent='المستكشف';$('msg').textContent='مزيان، ولكن أجي تعلّم كثر!'}
+  else{L.className='level high';L.textContent='حارس الذاكرة';$('msg').textContent='مزيان بزاف! أجي تزيد معلومات خرين.'}
 }
 $('again').onclick=()=>{i=0;score=0;$('result').hidden=true;$('quiz').hidden=false;show()};
 show();
