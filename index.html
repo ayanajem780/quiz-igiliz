@@ -111,7 +111,7 @@ const LV=["سهل","متوسط","صعيب"];
 let i=0,score=0;
 const $=id=>document.getElementById(id);
 function show(){
-  const it=Q[i];
+  const it=Q[i];{const r=it.c[it.a];for(let k=it.c.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[it.c[k],it.c[j]]=[it.c[j],it.c[k]]}it.a=it.c.indexOf(r)}
   $('count').textContent=`السؤال ${i+1} من ${Q.length}`;
   $('pts').textContent=`${score} من ${Q.length}`;
   $('diff').textContent=LV[it.d];$('diff').className='diff d'+it.d;
